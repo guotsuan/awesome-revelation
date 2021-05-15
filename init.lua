@@ -220,7 +220,6 @@ end
 function revelation.restore(t, zt)
     for scr=1, capi.screen.count() do
         awful.tag.history.restore(scr)
-        t[scr].screen = nil
     end
 
     capi.keygrabber.stop()
